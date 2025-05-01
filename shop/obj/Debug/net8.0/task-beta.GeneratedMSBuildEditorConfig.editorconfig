@@ -1,0 +1,43 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = task_beta
+build_property.RootNamespace = task_beta
+build_property.ProjectDir = C:\Users\arnfo\Desktop\Тп\Лаба 5\task-beta\task-beta\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\arnfo\Desktop\Тп\Лаба 5\task-beta\task-beta
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/arnfo/Desktop/Тп/Лаба 5/task-beta/task-beta/Views/Delete/Deleter.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVsZXRlXERlbGV0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/arnfo/Desktop/Тп/Лаба 5/task-beta/task-beta/Views/Edit/Editor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWRpdFxFZGl0b3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/arnfo/Desktop/Тп/Лаба 5/task-beta/task-beta/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/arnfo/Desktop/Тп/Лаба 5/task-beta/task-beta/Views/Watch/Observer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2F0Y2hcT2JzZXJ2ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/arnfo/Desktop/Тп/Лаба 5/task-beta/task-beta/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/arnfo/Desktop/Тп/Лаба 5/task-beta/task-beta/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
