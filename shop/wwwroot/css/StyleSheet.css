@@ -1,0 +1,245 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: "Overpass", serif;
+    cursor: default;
+}
+button {
+    cursor: pointer;
+}
+.changebackground {
+    background-color: #f2f2f2 !important;
+    color: black !important;
+    box-shadow: 0px 5px 20px 8px rgba(34, 60, 80, 0.17) !important;
+}
+
+header {
+    background-color: #f2f2f2;
+    width: 100%;
+    display: flex;
+    height: 100vh;
+}
+header div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.list-style {
+    position: absolute;
+    height: auto;
+    width: 500px;
+    margin: 2% 4%;
+    font-size: 20px;
+    color: #777777;
+}
+.list-style li{
+    display: inline-block;
+    margin: 0% 5%;
+}
+.list-style a{
+    text-decoration: none;
+    color: #777777;
+    cursor: pointer;
+    transition: 1.5s;
+}
+.list-style a:hover{
+    color: #2e2e2e;
+    transition: 1s;
+}
+.leftText > * {
+    margin: 0.75% 0;
+}
+.leftText h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+.leftText p {
+    font-size: 20px;
+}
+.rightText img {
+    width: 55%;
+}
+.rightText p {
+    color: #c5c5c5;
+    font-weight: 600;
+}
+.buyHeader {
+    padding: 1.5% 4%;
+    text-align: center;
+    border: none;
+    color: white;
+    font-size: 20px;
+    border-radius: 15px;
+    background-color: black;
+}
+
+
+
+.dialogMain {
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 70%;
+    height: 90%;
+    position: absolute;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0px 5px 20px 15px rgba(34, 60, 80, 0.17);
+}
+.changehtml {
+    overflow: hidden;
+}
+.closeModel {
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    border: none;
+    background-color: white;
+    font-size: 24px;
+}
+.orderForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    margin: auto;
+    font-family: "Overpass", sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+.orderForm h2 {
+    text-align: center;
+}
+.orderForm label {
+    display: block;
+    font-weight: bold;
+}
+.orderForm input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 350px;
+    cursor: text;
+}
+.orderForm button {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s ease;
+    width: 35%;
+}
+.orderForm button:hover {
+    background-color: #333;
+}
+.text-danger {
+    display: block;
+    color: red;
+}
+.validError {
+    color: red;
+    border: 2px red solid;
+    padding: 1%;
+    background-color: rgba(255, 99, 71, 0.5);
+}
+.validSuccess {
+    white-space: pre-line;
+    color: green;
+    border: 2px green solid;
+    padding: 1%;
+    background-color: rgba(60, 179, 113, 0.5);
+}
+
+
+
+
+main {
+    width: 100%;
+    margin-top: 1.5%;
+}
+.textInMain {
+    margin: 0 3%;
+    font-weight: bold;
+}
+.textInMain p:first-of-type {
+    font-size: 15px;
+}
+.textInMain p:last-of-type {
+    font-size: 25px;
+}
+.productsList {
+    margin: 0.5% 2%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.productUnit {
+    text-align: center;
+    margin: 4% 3%;
+    padding: 7% 0;
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.17);
+    border-radius: 10px;
+}
+.productUnit * {
+    margin: 1% 0;
+}
+.productUnit img {
+    width: 70%;
+}
+.buttonUnit {
+    border: none;
+    color: white;
+    padding: 2% 3.5%;
+    font-weight: 500;
+    border-radius: 7px;
+    background-color: black;
+}
+
+
+
+.addModule {
+    display: flex;
+    margin-top: 1.5%;
+    height: 50vh;
+}
+.addModule:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+.addText {
+    margin-top: 1.5%;
+    height: 45px;
+}
+
+
+.orderContainer{
+    display: block;
+}
+.orderItems {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    margin-left:17.5%
+}
+.singleItem {
+    height: 40px;
+    font-size: 20px;
+    padding: 10px 15px;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: inline-block;
+    background-color: #f9f9f9;
+    text-align: center;
+    min-width: 120px;
+}

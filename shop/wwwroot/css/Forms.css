@@ -1,0 +1,83 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: "Overpass", serif;
+    cursor: default;
+}
+button {
+    cursor: pointer;
+}
+
+.list-style {
+    position: absolute;
+    height: auto;
+    width: 500px;
+    margin: 2% 4%;
+    font-size: 20px;
+    color: #777777;
+}
+.list-style li{
+    display: inline-block;
+    margin: 0% 5%;
+}
+.list-style a{
+    text-decoration: none;
+    color: #777777;
+    cursor: pointer;
+    transition: 1.5s;
+}
+.list-style a:hover{
+    color: #2e2e2e;
+    transition: 1s;
+}
+
+.addModule {
+    margin-top: 3%;
+}
+.addText {
+    margin: 3% 5% 1.5%;
+    font-size: 34px;
+}
+
+.Form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    margin: auto;
+    font-family: "Overpass", sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+.Form h2 {
+    text-align: center;
+}
+.Form label {
+    display: block;
+    font-weight: bold;
+}
+.Form input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 350px;
+    cursor: text;
+}
+.Form button {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s ease;
+    width: 20%;
+}
+.Form button:hover{
+    background-color: #333;
+}

@@ -1,0 +1,74 @@
+﻿@using task_beta.Controllers
+@model editController
+@{
+
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Details</title>
+    <link rel="stylesheet" href="~/css/Forms.css">
+</head>
+<body>
+    <header>
+        <ul class="list-style">
+            <li><a href="~/Home">Home</a></li>
+            <li><a href="~/Watch/Observer">Observer</a></li>
+            <li><a href="#">Editor</a></li>
+            <li><a href="~/Delete/Deleter">Deleter</a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="addModule orderContainer ">
+            <div class="textInMain addText textOrder">
+                <p>СТРАНИЦА РЕДАКТИРОВАНИЯ ЭЛЕМЕНТА (EDIT)</p>
+            </div>
+
+            <form asp-action="EditorPost" class="Form" method="post">
+                <p>
+                    <label asp-for="order.IdOrder">Id заказа:</label>
+                    <input required type="text" id="idOrder" asp-for="order.IdOrder" placeholder="Id...">
+                    <span asp-validation-for="order.IdOrder" class="text-danger"></span>
+                </p>
+                <p>
+                    <label asp-for="order.NameOrder">Имя:</label>
+                    <input required type="text" id="name" asp-for="order.NameOrder" placeholder="Имя">
+                    <span asp-validation-for="order.NameOrder" class="text-danger"></span>
+                </p>
+
+                <p>
+                    <label asp-for="order.SecondNameOrder">Фамилия:</label>
+                    <input required type="text" id="SecondNameOrder" asp-for="order.SecondNameOrder" placeholder="Фамилия">
+                    <span asp-validation-for="order.SecondNameOrder" class="text-danger"></span>
+                </p>
+
+                <p>
+                    <label asp-for="order.EmailOrder">Почтовый ящик:</label>
+                    <input required type="email" id="email" asp-for="order.EmailOrder" placeholder="Почтовый ящик">
+                    <span asp-validation-for="order.EmailOrder" class="text-danger"></span>
+                </p>
+
+                <p>
+                    <label asp-for="order.AddressOrder">Адрес доставки:</label>
+                    <input required type="text" id="address" asp-for="order.AddressOrder" placeholder="Ул. Пушкино, д. 2, кв. 1">
+                    <span asp-validation-for="order.AddressOrder" class="text-danger"></span>
+                </p>
+
+                <p>
+                    <label asp-for="order.QuantityOrder">Количество:</label>
+                    <input required type="number" id="quantity" asp-for="order.QuantityOrder" placeholder="1">
+                    <span asp-validation-for="order.QuantityOrder" class="text-danger"></span>
+                </p>
+
+                <button> Изменить </button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

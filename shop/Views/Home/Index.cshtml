@@ -1,0 +1,110 @@
+﻿@using task_beta.Controllers
+@model HomeController
+@{
+
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Clock Shop</title>
+    <link rel="stylesheet" href="~/css/StyleSheet.css">
+</head>
+<body>
+    <header>
+        <ul class="list-style">
+            <li><a href="#">Home</a></li>
+            <li><a href="~/Watch/Observer">Observer</a></li>
+            <li><a href="~/Edit/Editor">Editor</a></li>
+            <li><a href="~/Delete/Deleter">Deleter</a></li>
+        </ul>
+
+        <div class="leftText">
+            <h1> ДИЗАЙНЕРСКИЙ ЧАСЫ </h1>
+            <p> ПОЛНОСТЬЮ РУЧНОЕ ИЗГОТОВЛЕНИЕ </p>
+            <button class="buyHeader buttonToChange openModel" data-price="900000"> КУПИТЬ </button>
+            <dialog class="dialogMain">
+                <form asp-action="Order" class="orderForm" method="post">
+                    <h2>Оформление заказа</h2>
+                    
+                    @if (ViewBag.successValid != null && ViewBag.successValid != "")
+                    {
+                        <p class="validSuccess">@ViewBag.successValid</p>
+                    }
+                    else if (ViewBag.errorValid != null && ViewBag.errorValid != "")
+                    {
+                            <p class="validError">@ViewBag.errorValid</p>
+                    }
+
+                    <p>
+                        <label asp-for="order.NameOrder">Имя:</label>
+                        <input type="text" id="name" asp-for="order.NameOrder" placeholder="Имя">
+                        <span asp-validation-for="order.NameOrder" class="text-danger"></span>
+                    </p>
+
+                    <p>
+                        <label asp-for="order.SecondNameOrder">Фамилия:</label>
+                        <input type="text" id="SecondNameOrder" asp-for="order.SecondNameOrder" placeholder="Фамилия">
+                        <span asp-validation-for="order.SecondNameOrder" class="text-danger"></span>
+                    </p>
+
+                    <p>
+                        <label asp-for="order.EmailOrder">Почтовый ящик:</label>
+                        <input type="email" id="email" asp-for="order.EmailOrder" placeholder="Почтовый ящик">
+                        <span asp-validation-for="order.EmailOrder" class="text-danger"></span>
+                    </p>
+
+                    <p>
+                        <label asp-for="order.AddressOrder">Адрес доставки:</label>
+                        <input type="text" id="address" asp-for="order.AddressOrder" placeholder="Ул. Пушкино, д. 2, кв. 1">
+                        <span asp-validation-for="order.AddressOrder" class="text-danger"></span>
+                    </p>
+
+                    <p>
+                        <label asp-for="order.QuantityOrder">Количество:</label>
+                        <input type="number" id="quantity" asp-for="order.QuantityOrder" placeholder="1">
+                        <span asp-validation-for="order.QuantityOrder" class="text-danger"></span>
+                    </p>
+
+                    <p>
+                        <label>Промокод:</label>
+                        <input type="text" id="promo" placeholder="*Промокод*">
+                    </p>
+
+                    <p class="priceHeader"></p>
+                    <button> Заказать! </button>
+                </form>
+                <button id="closeModel" class="closeModel">&#x2715 </button>
+            </dialog>
+        </div>
+        <div class="rightText">
+            <p> JACOB & CO <br>EPIC X TOURBILON BAGUETTE <br>900.000$</p>
+            <img src="imgs/mainPhotoWatches.png">
+        </div>
+    </header>
+
+    <main>
+        <div class="textInMain">
+            <p>ХИТЫ</p>
+            <p>ПОСЛЕДНИЕ ПОСТУПЛЕНИЯ</p>
+        </div>
+        <div class="productsList">
+            @foreach(var product in ViewBag.products)
+            {
+                <div class="productUnit">
+                    <img src="@product.imagePathProduct" />
+                    <p>@product.NameProduct</p>
+                    <p>@($"{product.CostProduct}$")</p>
+                    <button class="buttonUnit buttonToChange openModel" data-price="@product.CostProduct"> Купить </button>
+                </div>
+            }
+        </div>
+    </main>
+    <script src="~/js/JavaScript.js"></script>
+</body>
+</html>

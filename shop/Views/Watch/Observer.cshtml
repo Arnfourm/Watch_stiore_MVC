@@ -1,0 +1,55 @@
+﻿@using task_beta.Controllers
+@model watchController
+@{
+
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Details</title>
+    <link rel="stylesheet" href="~/css/DetailWatch.css">
+</head>
+<body>
+    <header>
+        <ul class="list-style">
+            <li><a href="~/Home">Home</a></li>
+            <li><a href="#">Observer</a></li>
+            <li><a href="~/Edit/Editor">Editor</a></li>
+            <li><a href="~/Delete/Deleter">Deleter</a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="addModule orderContainer ">
+            <div class="textInMain addText textOrder">
+                <p>СТРАНИЦА ДЕТАЛЬНОГО ПРОСМОТРА ЭЛЕМЕНТА (DETAILS)</p>
+            </div>
+
+            <div class="orderItemsGrid">
+                <div class="orderHeader">Id заказа</div>
+                <div class="orderHeader">Имя покупателя</div>
+                <div class="orderHeader">Фамилия покупателя</div>
+                <div class="orderHeader">Почта покупателя</div>
+                <div class="orderHeader">Адрес доставки</div>
+                <div class="orderHeader">Количество товара</div>
+
+                @foreach (var order in ViewBag.orders)
+                {
+                    <div class="singleItem">@order.IdOrder</div>
+                    <div class="singleItem">@order.NameOrder</div>
+                    <div class="singleItem">@order.SecondNameOrder</div>
+                    <div class="singleItem">@order.EmailOrder</div>
+                    <div class="singleItem">@order.AddressOrder</div>
+                    <div class="singleItem">@order.QuantityOrder</div>
+                }
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>
